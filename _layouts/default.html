@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    {% if site.tags != "" %}
+	  {% include collecttags.html %}
+	{% endif %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+	      <!--
+
+	  <div class="wrapper-masthead">
+	  <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+	  <div class="site-info">
+	    <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+	    <p class="site-description">{{ site.description }}</p>
+	  </div>
+-->
+	<nav class="navbar navbar-toggleable-md justify-content-end navbar-light bg-faded">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand" href="{{ site.baseurl }}/">SeraphimX</a>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+		<a class="nav-item nav-link" href="{{ site.baseurl }}/">All</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-item nav-link" href="{{ site.baseurl }}/pentesting">Pentesting</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-item nav-link" href="{{ site.baseurl }}/motorcycle">Motorcycling</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-item nav-link" href="{{ site.baseurl }}/projects">Projects</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-item nav-link" href="{{ site.baseurl }}/about">About Me</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>	 
+<!--    </div> -->
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
+</html>
