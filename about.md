@@ -8,11 +8,12 @@ Engineering undergraduate, OSCP
 
 ### More Information
 
-I'm an engineering student with passion for Cyber Security and computer engineering. 
-Oh, and I also got OSCP certified on November 2017 :) 
+I'm an engineering student with a passion for Cyber=Security and computer engineering.
+
+I got OSCP certified on November 2017 :) 
 
 ### Contact me
 
-Wait up. I'm still thinking about this
+Email me at seraphimxs[at]gmail[dot]com
 
 [comment]: <> [email@domain.com](mailto:email@domain.com)
