@@ -4,13 +4,13 @@ title: About me
 permalink: /about/
 ---
 
-Engineering undergraduate, OSCP
+Pentester, OSCP, Engineering undergraduate
 
 ### More Information
 
-I'm an engineering student with a passion for Cyber=Security and computer engineering.
+I'm an engineering student (graduating 2018) with a passion for Cyber-Security and computer engineering.
 
-I got OSCP certified on November 2017 :) 
+I got OSCP certified on November 2017 :) And will also be beginning a full-time pentest role upon graduation.
 
 ### Contact me
 

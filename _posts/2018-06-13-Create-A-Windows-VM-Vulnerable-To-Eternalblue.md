@@ -1,30 +1,27 @@
 ---
 layout: post
-title: Create a Windows VM Vulnerable to MS17-010 EternalBlue
+title: Create a Windows 7 VM Vulnerable to MS17-010 EternalBlue
 tags: pentesting
 ---
 Recently in one of the CTF challenges conducted in my school's Security module, my team decided to build up a challenge involving MS17-010. We wanted to create a Windows Virtual Machine that is vulnerable to the MS17-010 EternalBlue exploit.
 
-The steps involving the creation of the VM are provided below. Take note that this VM should be used for educational and research purposes only.
+The steps involving the creation of the VM are provided below. Take note that this VM should be used for educational and research purposes only. Also, Windows 10 prevents the trivial selection and disabling of specific updates to be installed, so we will be using Windows 7 instead. 
 
-
+The basic process involves preventing the automatic update from patching the Windows VM, and setting up the environment for SMB to be active.
+ 
 <b>Steps to create the vulnerable VM </b>
 
-1) Download the IE8 on Win7 x86 (Virtualbox) you can download it here: https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+1) Download the IE8 on Win7 x86 (Virtualbox) and extract it. You can download the zipped OVA file here: https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 
 <img src="{{ site.url }}/images/2018-06-13/downloadVM.PNG" >
 
-2) Launch Virtualbox, and import the downloaded VM into Virtualbox using “import appliance”
+2) Launch Virtualbox, and import the downloaded VM into Virtualbox using “File > import appliance”
 
 <img src="{{ site.url }}/images/2018-06-13/virtualboxImport.PNG" >
 
 <img src="{{ site.url }}/images/2018-06-13/virtualboxImport2.PNG" >
 
-Select the Windows VM you just downloaded.
-<img src="{{ site.url }}/images/2018-06-13/virtualboxImport3.PNG" >
-
-Hit Next, and import.
-<img src="{{ site.url }}/images/2018-06-13/virtualboxImport4.PNG" >
+Select the unzipped ova file, hit Next, and import.
 
 
 3) Before you start the VM, we want to prevent the VM from automatically update itself. Go to the VM Settings and disable the NAT connection, by unattaching the network adapter.
@@ -33,6 +30,11 @@ Hit Next, and import.
 
 
 4) Boot up the VM. When you reach the Desktop, proceed to change the Windows Update setting to “check for updates but let me choose when to download and install them”
+
+Do a simple search for windows update settings
+
+
+
 
 5) Re-enable the NAT adapter
 
